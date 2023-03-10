@@ -12,8 +12,8 @@
       content="{{ site.description }}" />
     <meta property="og:description"
       content="{{ site.description }}" />
-    <link rel="canonical" href="{{ site.url }}/" />
-    <meta property="og:url" content="{{ site.url }}/" />
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}" />
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
@@ -25,20 +25,20 @@
         "description": "{{ site.description }}",
         "headline": "{{ site.title }}",
         "name": "{{ site.title }}",
-        "url": "{{ site.url }}/"
+        "url": "{{ site.url }}{{ site.baseurl }}"
       }
     </script>
     <!-- End Jekyll SEO tag -->
-    <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
-    <link rel="stylesheet" href="/assets/main.css">
-    <link rel="stylesheet" href="/css/stylin.css">
+    <link type="application/atom+xml" rel="alternate" href="{{ site.url }}{{ site.baseurl }}feed.xml" title="{{ site.title }}" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/stylin.css">
   </head>
 
   <body>
 
     <header class="site-header" role="banner">
 
-      <div class="wrapper"><a class="site-title" rel="author" href="/">{{ site.title }}</a>
+      <div class="wrapper"><a class="site-title" rel="author" href="{{ site.baseurl }}/">{{ site.title }}</a>
     
         <nav class="site-nav">
 
@@ -52,8 +52,8 @@
               </svg></span></label>
 
               <div class="trigger">
-                <a class="page-link" href="/">HOME</a>
-                <a class="page-link" href="/who/">WHO</a>
+                <a class="page-link" href="{{ site.baseurl }}/">HOME</a>
+                <a class="page-link" href="{{ site.baseurl }}/who/">WHO</a>
               </div>
 
         </nav>

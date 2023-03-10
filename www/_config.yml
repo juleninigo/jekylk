@@ -1,8 +1,8 @@
 title: JAVIBAI
 description: >- # this means to ignore newlines until "baseurl:"
   Tenemos una descripción apasionante y extremadamente útil.
-# baseurl: "" # the subpath of your site, e.g. /blog
-url: http://localhost:4000 # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/web" # the subpath of your site, e.g. /blog
+url: http://ciber-11.ciber-egibide.eu # the base hostname & protocol for your site, e.g. http://example.com
 repo-url: https://github.com/ibaiape/javibai_site
 repo-name: javibai_site
 mail1: mail1@example.com
