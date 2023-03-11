@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'jekyll' }
     stages {
         stage("build") {
             steps {
