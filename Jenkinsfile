@@ -3,10 +3,7 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                git url: 'http://ciber-11.ciber-egibide.eu/gitea/ciber_11/website.git', branch: 'master'
-                sh 'printenv'
-                sh 'pwd'
-                sh 'ls -la'
+                git url: 'https://ciber-11.ciber-egibide.eu/gitea/web/website.git', branch: 'master'
                 sh 'jekyll build -q -s ./www -d ~/output/web'
             }
         }
